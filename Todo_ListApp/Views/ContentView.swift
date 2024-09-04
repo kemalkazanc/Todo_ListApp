@@ -26,6 +26,7 @@ struct ContentView: View {
                 }
             }
         }
+        //Création d'un btn pour ajouter une tâche
         .overlay(alignment: .bottomTrailing){
             Button {
                 isShowingNewScreen = true
@@ -39,7 +40,8 @@ struct ContentView: View {
             }
             .padding()
         }
-        .sheet(isPresented: isShowingNewScreen) {
+        // Ouverture d'une nouvelle modale
+        .sheet(isPresented: $isShowingNewScreen) {
             NewTaskView(taskCollection: $myTasks)
         }
     }

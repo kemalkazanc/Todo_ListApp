@@ -10,6 +10,7 @@ struct TaskView: View {
     
     let task: Task
     
+    // Une propriété qui retourne une couleur en fonction de la priorité d'une tâche. 
     var flagColor: Color{
         if task.priority == 1{
             return .red

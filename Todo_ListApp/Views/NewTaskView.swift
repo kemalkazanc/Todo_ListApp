@@ -14,6 +14,7 @@ struct NewTaskView: View {
     
     @Binding var taskCollection: [Task]
     
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack(spacing: 20){
@@ -50,6 +51,7 @@ struct NewTaskView: View {
     private func saveTask() {
         let newTask = Task(title: taskName, priority: priority)
         taskCollection.append(newTask)
+        dismiss()
     }
 }
 

@@ -58,10 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				7F9BFE2D2C87587200CF0A2A /* Todo_ListAppApp.swift */,
-				7F9BFE2F2C87587200CF0A2A /* ContentView.swift */,
-				7FC43D9D2C8889BD0010B827 /* NewTaskView.swift */,
-				7F9BFE3B2C8759F700CF0A2A /* Task.swift */,
-				7F9BFE3D2C875A3900CF0A2A /* TaskView.swift */,
+				7FC43D9F2C889B380010B827 /* Models */,
+				7FC43DA02C889B560010B827 /* Views */,
 				7F9BFE312C87587700CF0A2A /* Assets.xcassets */,
 				7F9BFE332C87587700CF0A2A /* Preview Content */,
 			);
@@ -74,6 +72,24 @@
 				7F9BFE342C87587700CF0A2A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7FC43D9F2C889B380010B827 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F9BFE3B2C8759F700CF0A2A /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7FC43DA02C889B560010B827 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F9BFE2F2C87587200CF0A2A /* ContentView.swift */,
+				7F9BFE3D2C875A3900CF0A2A /* TaskView.swift */,
+				7FC43D9D2C8889BD0010B827 /* NewTaskView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
